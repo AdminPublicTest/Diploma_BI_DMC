@@ -9,4 +9,4 @@ st.sidebar.image("DMC.png", width = 300)
 
 st.write("Elaborado por: Carlos Carrillo")
 
-archivo - st.file_uploader("Cargue el archivo excel o csv")
+archivo = st.file_uploader("Cargue el archivo excel o csv")
