@@ -11,16 +11,20 @@ st.write("Elaborado por: Chris Perea")
 
 archivo = st.file_uploader("Cargue el archivo excel o csv")
 
-if archivo is not None :
-  if archivo.name.endswith(".csv"):
-    data = pd.read_csv(archivo)
-    st.write(data)
-  elif archivo.name.endswith(".xlsx")
-   data = pd.read_excel(archivo)
-else:
-  st.write("Formato no Válido")
+if archivo is not None:
+    
+    if archivo.name.endswith(".csv"):
+        data = pd.read_csv(archivo)
+        st.write(data)
+
+    elif archivo.name.endswith(".xlsx"):
+        data = pd.read_excel(archivo)
+        st.write(data)
+
+    else:
+        st.write("Formato no válido")
 
 else:
- st.write("Por favor cargue su archivo")
+    st.write("Por favor cargue su archivo")
 
 
